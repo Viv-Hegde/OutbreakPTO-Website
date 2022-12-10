@@ -1,0 +1,107 @@
+/*
+  CSS file used by "Management Principles: The Office" webpage.
+  Created by: Vivek Hegde
+  Contributors: Trina Chuang
+  Date: December 3, 2022
+
+  This webpage uses "Husky Purple" and "Husky Gold" colors as the primary color palatte.
+  Seconadary color palatte includes colors like white, black and shades of grey.
+*/
+
+body {
+  background-image: url(images/custom\ space.png);
+  font-family: 'Orbitron', sans-serif;
+  color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+#navigation {
+  background-color: black;
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+#title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 512px;
+  height: 64px;
+}
+
+#tabs {
+  display: flex;
+  justify-content: start;
+  margin-top: 10px;
+}
+
+#tabs a {
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: #ffffff 3px;
+  border-radius: 5px;
+  margin: 0.75px;
+  color: red;
+  background-color: rgb(22, 22, 22);
+}
+
+#tabs .selected {
+  background-color: rgb(43, 43, 43);
+}
+
+#tabs a:hover {
+  background-color: rgb(33, 33, 33);
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited {
+  text-decoration: none;
+  color: rgb(247, 67, 67);
+}
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+#contents {
+  margin-top: 140px;
+  font-family: 'Exo', sans-serif;
+  font-size: 25px;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(18, 18, 18, 0.683);
+  padding: 4px;
+  border-radius: 6px;
+}
+
+#contents .separator {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7px;
+  width: 225px;
+  height: 60px;
+}
+
+p {
+  margin: 2px;
+}

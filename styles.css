@@ -44,13 +44,13 @@ body {
 }
 
 #tabs a {
-  padding-left: 5.5%;
-  padding-right: 5.5%;
+  padding-left: 5.3%;
+  padding-right: 5.3%;
   padding-top: 5px;
   padding-bottom: 5px;
   border: #ffffff 3px;
   border-radius: 5px;
-  margin: 0.75px;
+  margin: 1px;
   color: red;
   background-color: rgb(22, 22, 22);
 }
@@ -104,4 +104,59 @@ h1 {
 
 p {
   margin: 2px;
+}
+
+/* Highest priority */
+.hidden {
+  display: none !important;
+}
+
+#trailer video {
+  position: relative;
+  z-index: -1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 360px;
+  width: 639px;
+  background-color: black;
+}
+
+#screenshots div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 359x;
+  width: 644px;
+}
+
+#screenshots p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#box {
+  display: flex;
+  justify-content: center;
+}
+
+.navButton {
+  height: 83px;
+  width: 50px;
+  margin: 15px;
+  margin-top: 115px;
+  filter: brightness(75%);
+}
+
+.navButton:hover {
+    background-color: rgb(18, 18, 18);
+}
+
+footer {
+  background-color: rgb(20, 20, 20);
+  color: rgb(254, 95, 95);
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+  font-family: 'Exo', sans-serif;
 }

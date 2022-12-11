@@ -16,11 +16,13 @@
   <title>OUTBREAK:PTO</title>
   <link href="styles.css" rel='stylesheet' />
   <link href="https://fonts.googleapis.com/css2?family=Exo&family=Orbitron&display=swap" rel="stylesheet">
-  <script src=index.js></script>
+  <script src=gallery.js></script>
 </head>
 <body>
   <section id="navigation">
-    <img src="images/3dtitle.png" alt="title" id="title">
+    <a href="index.html#play">
+      <img src="images/3dtitle.png" alt="title" id="title">
+    </a>
 
     <!-- Section that contains elements for navigation -->
     <section id="tabs">
@@ -33,7 +35,46 @@
   </section>
 
   <section id="contents">
-
+    <section id="trailer">
+      <h1>Game Trailer</h1>
+      <video controls src="videos/Outbreak-PTO Game Trailer.mp4"></video>
+    </section>
+    <section id="screenshots-holder">
+      <h1>Screenshots</h1>
+      <section id="box">
+        <img src="images/navButtonsLeft.png" alt="left button" class="navButton">
+        <section id="screenshots">
+          <div>
+            <img src="images/Screenshots/map.jpg" alt="explore the map">
+            <p>Explore the map!</p>
+          </div>
+          <div class="hidden">
+            <img src="images/Screenshots/fightEnemies.jpg" alt="enemies">
+            <p>Defeat the enemies!</p>
+          </div>
+          <div class="hidden">
+            <img src="images/Screenshots/healthUpgrades.jpg" alt="health">
+            <p>Increase your health!</p>
+          </div>
+          <div class="hidden">
+            <img src="images/Screenshots/waeponUpgrades.jpg" alt="weapons">
+            <p>Upgrade your weapon!</p>
+          </div>
+          <div class="hidden">
+            <img src="images/Screenshots/boss.jpg" alt="boss">
+            <p>Challenge the boss!</p>
+          </div>
+        </section>
+        <img src="images/navButtonsRight.png" alt="right button" class="navButton">
+      </section>
+    </section>
   </section>
+
+  <footer>
+    <p>
+      &copy;2022 UW Bothell CSS 385 Team Outbreak:PTO. All other sources cited in <u>
+      <a href="credits.html">credits.</a></u>
+    </p>
+  </footer>
 </body>
 </html>

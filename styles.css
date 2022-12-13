@@ -63,7 +63,10 @@ body {
   background-color: rgb(33, 33, 33);
 }
 
-a:link { text-decoration: none; }
+a:link {
+  text-decoration: none;
+  color: rgb(247, 67, 67);
+}
 
 
 a:visited {
@@ -111,9 +114,11 @@ p {
   display: none !important;
 }
 
+#navigation {
+  z-index: 3;
+}
+
 #trailer video {
-  position: relative;
-  z-index: -1;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -138,6 +143,10 @@ p {
 #box {
   display: flex;
   justify-content: center;
+}
+
+li {
+  color: #ffffff;
 }
 
 .navButton {

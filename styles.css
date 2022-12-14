@@ -96,6 +96,15 @@ h1 {
   border-radius: 6px;
 }
 
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 6px;
+}
+
 #contents .separator {
   display: block;
   margin-left: auto;
@@ -161,11 +170,57 @@ li {
     background-color: rgb(18, 18, 18);
 }
 
+#photos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-pic {
+  height: 300px;
+  width: 250px;
+}
+
+.team {
+  position: relative;
+}
+
+.name-desciption {
+  visibility: hidden;
+  background-color: rgba(36, 36, 36, 0.737);
+  color: rgb(255, 0, 0);
+  text-align: center;
+  line-height: 300px;
+  height: 310px;
+  width: 260px;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+}
+
+.team:hover .name-desciption {
+  visibility: visible;
+}
+
+#special-thanks {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#special-thanks > h2 {
+  margin-bottom: 0px;
+}
+
+#note {
+  font-size: 16px;
+  margin-top: 50px;
+  text-align: center;
+}
+
 footer {
   background-color: rgb(20, 20, 20);
   color: rgb(254, 95, 95);
   text-align: center;
   padding: 5px;
-  margin-top: 20px;
+  margin-top: 180px;
   font-family: 'Exo', sans-serif;
 }

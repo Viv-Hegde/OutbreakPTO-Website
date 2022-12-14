@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <!--
-  HTML for "Management Principles: The Office" webpage.
+  reflection.html page for "Outbreak:PTO" website.
   Created by: Vivek Hegde
-  Contributors: Trina Chuang, Sarah Bird, Lixiao Kuang
-  Date: December 3, 2022
+  Contributors: Franz Alarcon, Tuong Banh
+  Date: December 13, 2022
 
-  Video credits: "The Office" all seasons
-  Case studies credits:
+  This webpage holds data that narrates our reflection process from creating Outbreak:PTO. This page is also hyperlinked to
+  other pages of our game website such as index.html, dev.html, gameplay.html, and credits.html. It also includes links to
+  our original postmortem and game presentation google slides that we presented in our class.
  -->
 <html lang="en">
 <head>
@@ -44,13 +45,112 @@
       <p><b>Budget: </b>$0</p>
       <p><b>Development Tools: </b>Unity (v. 2021.3.11f1), Aseprite, Photoshop</p><br>
       <p>Nine weeks ago, we began working on our game with a simple theme of "potatoes." Two months
-        and three playtests later, we released the final version of our game on December 7, 2022. This
+        and four playtests later, we released the final version of our game on December 7, 2022. This
         section documents the postmortem of our game with regards to some of the things that went right
         and some of the things that went wrong with our game development.
       </p><br>
-      <p>To view our original Postmortem presentaion slides, click <a href="">here</a></p>
-      <p>To view our original Game presentaion slides, click <a href="">here</a></p>
+      <p>To view our original Postmortem presentaion slides, click <a href="https://docs.google.com/presentation/d/1mn9RxXxFKP5ij-O45UBuMJV4sMSFVnGp_7n46THsD1w/edit#slide=id.ga294430b73_0_1810" target="_blank">here</a></p>
+      <p>To view our original Game presentaion slides, click <a href="https://docs.google.com/presentation/d/1yJ2K66TIBduCdH6mhec_AhwRPbK8pAOthm0IOlBOFhI/edit#slide=id.gaefc079dd7_0_185" target="_blank">here</a></p>
       <img src="images/popcorns.png" alt="popcorns" class="separator">
+      <section id="wrong">
+        <p><b>Five Things that went Wrong:</b></p>
+        <p><ol>
+          <li>Project Merging in GitHub</li>
+          <p>One of the greatest challenges that we faced as a team was merging our project files on GitHub.
+            Initially, when we started working on our project, we had two separate repositories -- one for the Map
+            and Menu Systems, and the other for Player and Enemy Mechanics. When we tried to auto merge through GitHub, some of our
+            scripts and project settings would be overwritten to accomodate the latest push. This was terrible
+            for us since our project would not work as we wanted it to. After experiencing the merge conflicts
+            for the first time, we had to manually transfer the files from both the repositories to a seaparate repository
+            for playtesting. In the last stages of our game, we all worked on the same repository, but we made sure that only one person at a time was working with it.
+            This was a little bit more time consuming, but fortunately it worked out extremely well for us since we had already completed the majority of
+            our project at that point.
+          </p><br>
+          <li>Short Development Time for Beta Playtesting</li>
+          <p>For our Beta playtesting, we only had 4 - 5 days of time to incorporate all the suggestions
+            made by our Alpha playtesters as well as include new additions that we wanted in our game. As a result, there
+            were a lot of unfinished features that we didn't get to present during our Beta Playtest.
+          </p><br>
+          <li>Unable to Add Dash Ability</li>
+          <p>When we first envisioned our game, we thought about giving our players the option of
+            choosing between either Dodge (curently implemented) or Dash abilities or both. But as we started
+            implementing, we realized that with our current project setup it was almost impossible
+            to implement two separate abilities (one with i-frames and one without) in the limited time remaining.
+          </p><br>
+          <li>Optimization Issues During Beta Playtest</li>
+          <p>Another consequence of the short development time for our Beta playtest was that we couldn't
+            optimize the game for our builds. At this point, our project was significantly huge which caused
+            our game to lag sometimes during playtesting. Additionally, there were also a few bugs when
+            the different scenes in our game interacted with each other. This further reduced the smoothness of
+            our game. That said, we were able to fix all the bugs in time for our final playtests. We ended up
+            adding unload optimizations and also a settings menu to further help with the optimization process.
+          </p><br>
+          <li>Limited Development Time Due to Obligations From Other classes</li>
+          <p>All the developers on our team were also taking multiple classes at the time of development of this game. Some
+            of our classes were hard and required more time which limited our time to work on this game.
+          </p>
+        </ol></p>
+      </section>
+      <img src="images/popcorns.png" alt="popcorns" class="separator">
+      <section id="right">
+        <p><b>Five Things that went Right:</b></p>
+        <p><ol>
+          <li>Good Pace of Development</li>
+          <p>This is one of the largest projects we have ever done. When we first designed our digital
+            prototype, we were afraid that the scope of our project is very large. Some feedback from
+            our peers after the prototype presentation also warned us about the size of this project. That said,
+            we started working on our project very early on, so that we would have some breathing room to
+            implement most things that we had envisioned. Fortunately, the consequence of our early start
+            snowballed throughout the quarter enabling us to produce a game that was very close to our initial design.
+          </p><br>
+          <li>Excellent Communication from Team Members</li>
+          <p>Communication is the most critical aspect of any team project. Our team knew this so we took
+            measures to ensure that we were all on the same page at all times. We communicated extensively through
+            Discord and shared all project components with each other. We also made a shared folder for presentation
+            items like the prototypes, development log, postmortem, and the final game presentation. Apart from
+            texting, we would also have a conference call at least once per week to update team members about the status
+            of our work, discuss new ideas, and delegate tasks for the next playtest. This amazing communication from our teammates reduced all the guesswork for others and
+            improved the overall trust within the team.
+          </p><br>
+          <li>Most Features From Our Original Plan Were Successfully Implemented</li>
+          <p>All plans change over time. Although this was true in our case too, we were able to maintain most of the
+            core features from our original plan. We came pretty close to implementing all the mechanics and the overall
+            game design that we had first envisioned.
+          </p><br>
+          <li>Our Playtesters Loved Our Game</li>
+          <p>Our game was played by a lot of people during playtesting, and we are proud to say that our game was
+            the rated the highest out of all the games from our class during these playtests. We tried to listen to
+            our playtesters as much as possible and incorporate their suggestions to the next iteration of our game. We believe that this
+            caused our playtesters to love our game even more, and they came back to play to it over and over agin.
+          </p><br>
+          <li>Most Components of Our Game Fit Very Well With Each Other</li>
+          <p>Our game had a lot of components and each of our teammates worked on specific parts. We divided our work this way
+            because we thought it would help us work faster with the limited time we had. Fortunately, most
+            of our individual components needed little to no rework and they fit perfectly with the rest of the components.
+          </p>
+        </ol></p>
+      </section>
+    </section>
+    <section id="team-reflection">
+      <h1>Team Reflection</h1>
+      <p>Throughout the development cycle of our game project, one aspect that we thought went really well was our
+        development output and pace. Between every playtest session in-class, we were able to implement
+        multiple features that responded to player feedback. For instance, after the alpha playtest, we were
+        able to develop the tutorial system, weapon reloading, ammo UI counter, and the menu systems for
+        the beta. After the beta playtest, we implemented the opening story sequence, the minimap, optimation
+        unloading, gamepad aim assist, the final boss enemy, weapon sounds, and updated and debugged the menu
+        systems and scene interactions. Lastly, after the final playtest and before the final play session,
+        we were able to include quick features to the game including death sounds for enemies, dodge cooldown indicator, and a health bar
+        for the final boss. As a team, we were able to quickly respond to player feedback to create substantial
+        improvements over each playtest iteration. </p>
+      <img src="images/popcorns.png" alt="popcorns" class="separator">
+      <p>If we had to have two more weeks to work on the project, three things we would prioritize are:
+        <ul>
+          <li>Implementing the dash ability that we introduced during our prototype presentation</li>
+          <li>Adding a cut scene at the end, and use the vents we created to spawn enemies</li>
+          <li>Implement a feature to save and retrieve game data</li>
+        </ul>
+      </p>
     </section>
   </section>
 

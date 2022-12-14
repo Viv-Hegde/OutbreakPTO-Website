@@ -1,28 +1,37 @@
 /*
-  CSS file used by "Management Principles: The Office" webpage.
+  CSS file used by "Outbreak:PTO" website.
   Created by: Vivek Hegde
-  Contributors: Trina Chuang
-  Date: December 3, 2022
+  Date: December 13, 2022
 
-  This webpage uses "Husky Purple" and "Husky Gold" colors as the primary color palatte.
-  Seconadary color palatte includes colors like white, black and shades of grey.
+  This webpage uses "black" and "red" colors as the primary color palatte corresponding to our game theme.
+  Seconadary color palatte includes colors like white and darker shades of grey.
 */
+
+body, h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+body, #navigation, #title, #contents .separator, #trailer video, #screenshots div img {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 body {
   background-image: url(images/custom\ space.png);
-  font-family: 'Orbitron', sans-serif;
   color: whitesmoke;
-  margin-left: auto;
-  margin-right: auto;
   width: 90%;
 }
 
-#navigation {
+#navigation, #trailer video {
   background-color: black;
-  position: fixed;
+}
+
+#navigation, #title, #contents .separator, #trailer video, #screenshots div img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+#navigation {
+  position: fixed;
   top: 0;
   width: 100%;
   padding-top: 15px;
@@ -30,15 +39,15 @@ body {
 }
 
 #title {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 512px;
   height: 64px;
 }
 
-#tabs {
+#tabs, #box, #photos {
   display: flex;
+}
+
+#tabs {
   justify-content: start;
   margin-top: 10px;
 }
@@ -63,52 +72,41 @@ body {
   background-color: rgb(33, 33, 33);
 }
 
-a:link {
-  text-decoration: none;
+a:link, a:visited {
   color: rgb(247, 67, 67);
 }
 
 
-a:visited {
-  text-decoration: none;
-  color: rgb(247, 67, 67);
+a:hover, a:active, a:link, a:visited { text-decoration: none; }
+
+#contents, footer {
+  font-family: 'Exo', sans-serif;
 }
 
-
-a:hover { text-decoration: none; }
-
-
-a:active { text-decoration: none; }
+#contents, h2 {
+  font-size: 25px;
+}
 
 #contents {
   margin-top: 140px;
-  font-family: 'Exo', sans-serif;
-  font-size: 25px;
+}
+
+h1, h2, #screenshots p, .name-desciption, #special-thanks, #note, footer {
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 6px;
 }
 
 h1 {
-  font-family: 'Orbitron', sans-serif;
   font-size: 40px;
-  text-align: center;
-  font-weight: bold;
   background-color: rgba(18, 18, 18, 0.683);
-  padding: 4px;
-  border-radius: 6px;
-}
-
-h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 25px;
-  text-align: center;
-  font-weight: bold;
-  padding: 4px;
-  border-radius: 6px;
 }
 
 #contents .separator {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 7px;
   width: 225px;
   height: 60px;
@@ -128,29 +126,20 @@ p {
 }
 
 #trailer video {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   height: 360px;
   width: 639px;
-  background-color: black;
 }
 
 #screenshots div img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   height: 359x;
   width: 644px;
 }
 
 #screenshots p {
-  text-align: center;
   margin-top: 15px;
 }
 
 #box {
-  display: flex;
   justify-content: center;
 }
 
@@ -171,7 +160,6 @@ li {
 }
 
 #photos {
-  display: flex;
   justify-content: space-around;
 }
 
@@ -188,7 +176,6 @@ li {
   visibility: hidden;
   background-color: rgba(36, 36, 36, 0.737);
   color: rgb(255, 0, 0);
-  text-align: center;
   line-height: 300px;
   height: 310px;
   width: 260px;
@@ -201,9 +188,8 @@ li {
   visibility: visible;
 }
 
-#special-thanks {
+#special-thanks, #note {
   margin-top: 50px;
-  text-align: center;
 }
 
 #special-thanks > h2 {
@@ -212,15 +198,11 @@ li {
 
 #note {
   font-size: 16px;
-  margin-top: 50px;
-  text-align: center;
 }
 
 footer {
   background-color: rgb(20, 20, 20);
   color: rgb(254, 95, 95);
-  text-align: center;
   padding: 5px;
   margin-top: 180px;
-  font-family: 'Exo', sans-serif;
 }
